@@ -20,7 +20,7 @@ const storageApi: StateStorage = {
       method: "PUT",
       body: value,
     }).then((res) => res.json());
-    console.count("setItem");
+    //console.count("setItem");
     return;
   },
 
