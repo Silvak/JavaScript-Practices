@@ -33,7 +33,7 @@ export const usePersonStore = create<PersonState & Actions>()(
     persist(storeAPI, {
       name: "person-storage",
       //storage: customSessionStorage,
-      storage: firebaseStorage,
+      //storage: firebaseStorage,
     })
   )
   //)
