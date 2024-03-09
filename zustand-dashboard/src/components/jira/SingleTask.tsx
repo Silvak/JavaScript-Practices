@@ -1,13 +1,24 @@
 import { IoReorderTwoOutline } from "react-icons/io5";
 import { Task } from "../../interfaces";
+import { useTaskStore } from "../../stores";
 
 interface Props {
   task: Task;
 }
 
 function SingleTask({ task }: Props) {
+  const setDraggingTaskId = useTaskStore((state) => state.setDragginTaskId);
+  const removeDragginTaskId = useTaskStore(
+    (state) => state.removeDragginTaskId
+  );
+
   return (
-    <div className="mt-5 flex items-center justify-between p-2">
+    <div
+      draggable
+      onDragStart={() => setDraggingTaskId(task.id)}
+      onDragEnd={() => removeDragginTaskId()}
+      className="mt-5 flex items-center justify-between p-2"
+    >
       <div className="flex items-center justify-center gap-2">
         <p className="text-base font-bold text-navy-700">{task.title}</p>
       </div>
