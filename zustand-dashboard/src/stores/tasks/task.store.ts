@@ -36,7 +36,7 @@ const storeApi: StateCreator<TaskState> = (set, get) => ({
     set((state) => ({
       tasks: {
         ...state.tasks,
-        [newTask.id]: newTask,
+        [newTask.id]: newTask, //
       },
     }));
   },
