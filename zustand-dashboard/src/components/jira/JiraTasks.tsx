@@ -1,9 +1,4 @@
-import {
-  IoAddOutline,
-  IoCheckmarkCircleOutline,
-  //IoEllipsisHorizontalOutline,
-  //IoReorderTwoOutline,
-} from "react-icons/io5";
+import { IoAddOutline, IoCheckmarkCircleOutline } from "react-icons/io5";
 import classNames from "classnames";
 import { Task, TaskStatus } from "../../interfaces";
 import SingleTask from "./SingleTask";
