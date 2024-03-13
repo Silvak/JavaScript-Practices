@@ -4,6 +4,7 @@ import { Task, TaskStatus } from "../../interfaces";
 import SingleTask from "./SingleTask";
 import { useTasks } from "../../hooks/useTasks";
 
+//
 interface Props {
   title: string;
   tasks: Task[];
