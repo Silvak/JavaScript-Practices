@@ -17,7 +17,7 @@ interface TaskState {
   changeTaskStatus: (taskId: string, status: TaskStatus) => void;
   onTaskDrop: (status: TaskStatus) => void;
 }
-
+//
 
 const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (
   set,
