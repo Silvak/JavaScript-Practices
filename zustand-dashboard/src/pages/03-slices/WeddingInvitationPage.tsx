@@ -4,9 +4,12 @@ import { useWeddingBoundStore } from "../../stores/wedding";
 export const WeddingInvitationPage = () => {
   const firstName = useWeddingBoundStore((state) => state.firstName);
   const lastName = useWeddingBoundStore((state) => state.lastName);
+  const guestCount = useWeddingBoundStore((state) => state.guestCount);
 
   const setFirstName = useWeddingBoundStore((state) => state.setFirstName);
   const setLastName = useWeddingBoundStore((state) => state.setLastName);
+  const setLGuestCount = useWeddingBoundStore((state) => state.setGuestCount);
+
   //
   return (
     <>
@@ -60,6 +63,8 @@ export const WeddingInvitationPage = () => {
                 placeholder="5"
                 min="0"
                 className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                value={guestCount}
+                onChange={(e) => setLGuestCount(parseInt(e.target.value))}
               />
             </div>
 
