@@ -10,7 +10,6 @@ export const WeddingInvitationPage = () => {
   const setLastName = useWeddingBoundStore((state) => state.setLastName);
   const setLGuestCount = useWeddingBoundStore((state) => state.setGuestCount);
 
-  //
   return (
     <>
       <h1>Invitación de Boda</h1>
