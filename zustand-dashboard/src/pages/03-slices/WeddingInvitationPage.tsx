@@ -10,6 +10,9 @@ export const WeddingInvitationPage = () => {
   const setLastName = useWeddingBoundStore((state) => state.setLastName);
   const setLGuestCount = useWeddingBoundStore((state) => state.setGuestCount);
 
+  const eventYYYYMMDD = useWeddingBoundStore((state) => state.eventYYYYMMDD());
+  const eventHHMM = useWeddingBoundStore((state) => state.eventHHMM());
+
   return (
     <>
       <h1>Invitación de Boda</h1>
@@ -73,7 +76,12 @@ export const WeddingInvitationPage = () => {
                   <label className="mb-3 block text-base font-medium text-[#07074D]">
                     Fecha de evento
                   </label>
-                  <input type="date" name="eventDate" id="eventDate" />
+                  <input
+                    type="date"
+                    name="eventDate"
+                    id="eventDate"
+                    value={eventYYYYMMDD}
+                  />
                 </div>
               </div>
               <div className="w-full px-3 sm:w-1/2">
@@ -81,7 +89,12 @@ export const WeddingInvitationPage = () => {
                   <label className="mb-3 block text-base font-medium text-[#07074D]">
                     Hora del evento
                   </label>
-                  <input type="time" name="eventTime" id="eventTime" />
+                  <input
+                    type="time"
+                    name="eventTime"
+                    id="eventTime"
+                    value={eventHHMM}
+                  />
                 </div>
               </div>
             </div>
