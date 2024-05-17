@@ -5,7 +5,7 @@ import { useWeddingBoundStore } from "../wedding";
 //import { customSessionStorage } from "../storages/session.storage";
 //import { firebaseStorage } from "../storages/firebase.storage";
 //import { logger } from "../middlewares/logger.middleware";
-//
+
 
 interface PersonState {
   firstName: string;
