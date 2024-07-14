@@ -1,7 +1,6 @@
 import { AxiosError } from "axios";
 import { tesloApi } from "../api/teslo.api";
 
-//
 export interface LoginResponse {
   id: string;
   email: string;
