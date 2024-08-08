@@ -6,7 +6,6 @@ interface Bear {
   name: string;
 }
 
-//
 interface BearState {
   blackBears: number;
   polarBears: number;
