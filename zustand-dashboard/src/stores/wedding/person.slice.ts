@@ -1,6 +1,6 @@
 import { StateCreator } from "zustand";
 
-//
+
 export interface PersonSlice {
   firstName: string;
   lastName: string;
