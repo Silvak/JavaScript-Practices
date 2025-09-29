@@ -12,7 +12,7 @@ export interface AuthState {
   checkAuthStatus: () => Promise<void>;
   logoutUser: () => void;
 }
-//
+
 
 const storeApi: StateCreator<AuthState> = (set) => ({
   status: "pending",
