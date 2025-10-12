@@ -13,8 +13,6 @@ export interface AuthState {
   logoutUser: () => void;
 }
 
-
-//
 const storeApi: StateCreator<AuthState> = (set) => ({
   status: "pending",
   token: undefined,
