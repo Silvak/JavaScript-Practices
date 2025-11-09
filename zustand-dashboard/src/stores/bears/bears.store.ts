@@ -5,7 +5,7 @@ interface Bear {
   id: number;
   name: string;
 }
-//
+
 interface BearState {
   blackBears: number;
   polarBears: number;
