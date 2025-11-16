@@ -6,7 +6,6 @@ interface Bear {
   name: string;
 }
 
-
 interface BearState {
   blackBears: number;
   polarBears: number;
@@ -24,7 +23,7 @@ interface BearState {
   addBear: () => void;
   clearBears: () => void;
 }
-
+//
 export const useBearStore = create<BearState>()(
   persist(
     (set, get) => ({
