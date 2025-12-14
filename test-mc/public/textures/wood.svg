@@ -1,0 +1,20 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base wood color -->
+  <rect width="16" height="16" fill="#B3814A" />
+  
+  <!-- Wood grain - vertical lines -->
+  <rect x="2" y="0" width="1" height="16" fill="#9E6F3E" />
+  <rect x="6" y="0" width="1" height="16" fill="#9E6F3E" />
+  <rect x="10" y="0" width="1" height="16" fill="#9E6F3E" />
+  <rect x="14" y="0" width="1" height="16" fill="#9E6F3E" />
+  
+  <!-- Wood grain - knots -->
+  <rect x="1" y="3" width="3" height="2" fill="#8B5A2B" />
+  <rect x="9" y="7" width="3" height="2" fill="#8B5A2B" />
+  <rect x="5" y="12" width="3" height="2" fill="#8B5A2B" />
+  
+  <!-- Wood grain - highlights -->
+  <rect x="4" y="1" width="1" height="16" fill="#C18F55" />
+  <rect x="8" y="0" width="1" height="16" fill="#C18F55" />
+  <rect x="12" y="0" width="1" height="16" fill="#C18F55" />
+</svg>
